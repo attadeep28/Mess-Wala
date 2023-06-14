@@ -5,41 +5,45 @@ This application assists users in discovering nearby mess establishments availab
 
 <p align="center">
   
-  <img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/938e0e40-b5f0-4d04-aa0e-00c21ff69624" alt="SignIn-Page" width="200">
+  <img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/ef46e4e4-9e3b-45f4-8404-4070f4e33663" alt="SignIn-Page" width="200">
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/df52b843-5e33-4749-9d83-163e56f22216" alt="Login-Page" width="200">
+<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/90b4aba7-0d6e-4023-99bd-e328fd981387" alt="Login-Page" width="200">
   <br>
   Login and Sigin in page
 </p>
 <br>
+
 <p align="center">
-<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/65e6ada0-76a8-4e2e-9139-8bce820190a6" alt="Home-Page" width="200">
+<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/f60672ae-02e3-4516-9269-ed03b0a3d0bd" alt="Home-Page" width="200">
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/299d8c87-1e55-4f36-9c0d-6eba7ee06853" alt="Home-Page-Sort-By" width="200">
+<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/addccac3-ac6d-4493-9a7c-0c30af990f40" alt="Home-Page-Sort-By" width="200">
    <br>
   Home page displaying all the available messes
 </p>
 <br>
 Users can conveniently access a comprehensive list of available mess facilities through the application. Additionally, the app offers sorting options based on criteria such as price, ratings, and distance, allowing users to tailor their search to their specific preferences and requirements. At the top right corner user can see his current location and in top left corner there is a profile icon where user can see his own details
 <br><br>
+
 <p align="center">
-<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/633b3a88-30d3-46e5-8080-4c210f4fc216" alt="Mess-Details-Page" width="200">
+<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/50939726-0470-45e0-b957-4aedbcbbb06e" alt="Mess-Details-Page" width="200">
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/233444cf-b522-4e1f-8b6d-6ce57191b2b5" alt="Mess-Rating" width="200">
+<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/86c361df-6823-4467-8a0f-68282e2cf85e" alt="Mess-Rating" width="200">
   <br> Mess Details page Displaying Mess Detail , Reviews/Rating
 </p>
  Upon selecting a specific mess from the home page, users will be redirected to the mess details page, where they can access comprehensive information about the chosen mess. This includes customer reviews and ratings, enabling users to gain insights into the quality and reputation of the establishment. Moreover, users can conveniently contact the mess by clicking on the call icon, while the direction icon provides the option to obtain Google Maps directions to the mess location. Additionally, users have the opportunity to contribute their own ratings for the mess, further enhancing the interactive experience and facilitating informed decision-making.
  <br><br>
+
  <p align="center">
-<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/dbff0e99-c78e-4cf5-8752-f528167cd159" alt="After Clicking Direction" width="200">
+<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/909dd34c-4e46-4432-90f5-43707b17041c" alt="After Clicking Direction" width="200">
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/f39b2aef-a032-4e92-b259-ff1ab82a2292" alt="After Clicking Call Icon" width="200">
+<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/a51921e5-2d39-4301-8103-9369b76e4bfb" alt="After Clicking Call Icon" width="200">
   </p>
   
   <br>
   <br>
+  
   <p align="center">
-<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/ffc9b7fd-740b-448f-831c-9c10483230c0" alt="Add Mess on the app for mess owners" width="200">
+<img src="https://github.com/attadeep28/Mess-Wala/assets/92106565/03a73e16-32d6-4028-b26d-767c45878d5d" alt="Add Mess on the app for mess owners" width="200">
   <br>
   This page is form mess owner's to add there mess on the app
 </p>
