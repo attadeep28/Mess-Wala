@@ -1,0 +1,4 @@
+# Mess-Wala
+Mess Wala is an Android app designed specifically for students or bachelors who have relocated from their homes for studies or work, and face challenges in locating suitable food mess facilities that are both convenient and of high quality.
+
+This application assists users in discovering nearby mess establishments available to them. It provides contact information for the mess owner, displays the distance to the mess, and offers directions for reaching the desired location. Moreover, the app includes customer reviews and essential details, such as mess ratings and reviews from other customers. It also specifies the food options available, whether vegetarian or non-vegetarian, as well as the monthly pricing of each mess. Overall, Mess Wala simplifies the lives of college students and bachelors by aiding them in finding the best mess facilities tailored to their needs.
