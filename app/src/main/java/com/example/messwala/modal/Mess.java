@@ -10,7 +10,7 @@ public class Mess {
 
     private Double Longitude;
     private Double Latitude;
-
+    String MOBILE_NO;
     private String ID;
     public Double getRATING() {
         return RATING;
@@ -20,7 +20,7 @@ public class Mess {
         this.RATING = RATING;
     }
 
-    public Mess(String MESS_NAME, String FOOD_TYPE, String PRICE, String DISTANCE, String IMAGE_URL, Double RATING, Double longitude, Double latitude, String ID) {
+    public Mess(String MESS_NAME, String FOOD_TYPE, String PRICE, String DISTANCE, String IMAGE_URL, Double RATING, Double longitude, Double latitude, String ID,String MOBILE_NO) {
         this.MESS_NAME = MESS_NAME;
         this.FOOD_TYPE = FOOD_TYPE;
         this.PRICE = PRICE;
@@ -30,10 +30,19 @@ public class Mess {
         Longitude = longitude;
         Latitude = latitude;
         this.ID = ID;
+        this.MOBILE_NO = MOBILE_NO;
     }
 
     public String getID() {
         return ID;
+    }
+
+    public String getMOBILE_NO() {
+        return MOBILE_NO;
+    }
+
+    public void setMOBILE_NO(String MOBILE_NO) {
+        this.MOBILE_NO = MOBILE_NO;
     }
 
     public void setID(String ID) {

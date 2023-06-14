@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
                                 String Rating = childSnapshot.child("RATING").getValue(String.class);
                                 String imgUrl = childSnapshot.child("IMAGE_URL").getValue(String.class);
                                 String ID = childSnapshot.getKey();
+                                String mobile = childSnapshot.child("MOBILE_NO").getValue(String.class);
 
                                 // Create a Mess object with the retrieved data
                                 assert Rating != null;
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                                 float dist = userLocation.distanceTo(locationB) / 1000;
 
 
-                                Mess mess = new Mess(messName, foodType, price, dist + "", imgUrl, Double.parseDouble(Rating), Double.parseDouble(longi), Double.parseDouble(lati), ID);
+                                Mess mess = new Mess(messName, foodType, price, dist + "", imgUrl, Double.parseDouble(Rating), Double.parseDouble(longi), Double.parseDouble(lati), ID,mobile);
                                 // Add the Mess object to the list
                                 messList.add(mess);
                             }
@@ -263,6 +264,7 @@ public class MainActivity extends AppCompatActivity {
                                 String Rating = childSnapshot.child("RATING").getValue(String.class);
                                 String imgUrl = childSnapshot.child("IMAGE_URL").getValue(String.class);
                                 String ID = childSnapshot.getKey();
+                                String mobile = childSnapshot.child("MOBILE_NO").getValue(String.class);
 
                                 // Create a Mess object with the retrieved data
                                 assert Rating != null;
@@ -276,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
                                 float dist = userLocation.distanceTo(locationB) / 1000;
 
 
-                                Mess mess = new Mess(messName, foodType, price, dist + "", imgUrl, Double.parseDouble(Rating), Double.parseDouble(longi), Double.parseDouble(lati), ID);
+                                Mess mess = new Mess(messName, foodType, price, dist + "", imgUrl, Double.parseDouble(Rating), Double.parseDouble(longi), Double.parseDouble(lati), ID,mobile);
                                 // Add the Mess object to the list
                                 messList.add(mess);
                             }
@@ -361,6 +363,7 @@ public class MainActivity extends AppCompatActivity {
                                 String Rating = childSnapshot.child("RATING").getValue(String.class);
                                 String imgUrl = childSnapshot.child("IMAGE_URL").getValue(String.class);
                                 String ID = childSnapshot.getKey();
+                                String mobile = childSnapshot.child("MOBILE_NO").getValue(String.class);
 
                                 // Create a Mess object with the retrieved data
                                 assert Rating != null;
@@ -374,7 +377,7 @@ public class MainActivity extends AppCompatActivity {
                                 float dist = userLocation.distanceTo(locationB) / 1000;
 
 
-                                Mess mess = new Mess(messName, foodType, price, dist + "", imgUrl, Double.parseDouble(Rating), Double.parseDouble(longi), Double.parseDouble(lati), ID);
+                                Mess mess = new Mess(messName, foodType, price, dist + "", imgUrl, Double.parseDouble(Rating), Double.parseDouble(longi), Double.parseDouble(lati), ID, mobile);
                                 // Add the Mess object to the list
                                 messList.add(mess);
                             }
@@ -459,6 +462,7 @@ public class MainActivity extends AppCompatActivity {
                                 String Rating = childSnapshot.child("RATING").getValue(String.class);
                                 String imgUrl = childSnapshot.child("IMAGE_URL").getValue(String.class);
                                 String ID = childSnapshot.getKey();
+                                String mobile = childSnapshot.child("MOBILE_NO").getValue(String.class);
 
                                 // Create a Mess object with the retrieved data
                                 assert Rating != null;
@@ -472,7 +476,7 @@ public class MainActivity extends AppCompatActivity {
                                 float dist = userLocation.distanceTo(locationB) / 1000;
 
 
-                                Mess mess = new Mess(messName, foodType, price, dist + "", imgUrl, Double.parseDouble(Rating), Double.parseDouble(longi), Double.parseDouble(lati), ID);
+                                Mess mess = new Mess(messName, foodType, price, dist + "", imgUrl, Double.parseDouble(Rating), Double.parseDouble(longi), Double.parseDouble(lati), ID,mobile);
                                 // Add the Mess object to the list
                                 messList.add(mess);
                             }

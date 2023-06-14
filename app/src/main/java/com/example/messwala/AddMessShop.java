@@ -48,7 +48,7 @@ public class AddMessShop extends AppCompatActivity {
     private RadioGroup foodTypeRadioGroup;
     private FusedLocationProviderClient fusedLocationClient;
     private static final int REQUEST_PICK_IMAGE = 1;
-    EditText longitudeEt, latitudeEt, messNameEt, pricePerMonth;
+    EditText longitudeEt, latitudeEt, messNameEt, pricePerMonth, mobileNo;
     TextView city;
     Uri selectedImage;
     ImageView messProfile;
@@ -68,6 +68,7 @@ public class AddMessShop extends AppCompatActivity {
         pricePerMonth = findViewById(R.id.et_price);
         longitudeEt = findViewById(R.id.et_longitude);
         latitudeEt = findViewById(R.id.et_latitude);
+        mobileNo = findViewById(R.id.et_contactNo);
         messProfile = findViewById(R.id.mess_profile_img);
         add = findViewById(R.id.addMess);
         progressBar = findViewById(R.id.progressBar);
@@ -176,8 +177,8 @@ public class AddMessShop extends AppCompatActivity {
                         String price = pricePerMonth.getText().toString();
                         String longi = longitudeEt.getText().toString();
                         String lati = latitudeEt.getText().toString();
-
-                        storeDataInFirebase(name, selectedFoodType, price, "0", imageUrl, "0", longi, lati);
+                        String contactNo = mobileNo.getText().toString();
+                        storeDataInFirebase(name, selectedFoodType, price, "0", imageUrl, "0", longi, lati, contactNo);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -196,7 +197,7 @@ public class AddMessShop extends AppCompatActivity {
         });
     }
 
-    private void storeDataInFirebase(String messName, String foodType, String price, String distance, String imageUrl, String rating, String longitude, String latitude) {
+    private void storeDataInFirebase(String messName, String foodType, String price, String distance, String imageUrl, String rating, String longitude, String latitude,String mobileNo) {
         // Get a reference to the root of your Firebase Realtime Database
         DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
 
@@ -213,7 +214,7 @@ public class AddMessShop extends AppCompatActivity {
         messData.put("RATING", rating);
         messData.put("Longitude", longitude);
         messData.put("Latitude", latitude);
-
+        messData.put("MOBILE_NO",mobileNo);
         // Set the data to the messRef node in the database
         messRef.setValue(messData)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {

@@ -3,11 +3,13 @@ package com.example.messwala;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -55,7 +57,8 @@ public class MessDetail extends AppCompatActivity {
     RecyclerView reviewRecycler;
     Button rateAndReview;
     ProgressBar progressBar;
-
+    String mobileNO;
+    private static final int REQUEST_PHONE_CALL = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -116,7 +119,10 @@ public class MessDetail extends AppCompatActivity {
         });
 
         contact.setOnClickListener(v -> {
-            startActivity(new Intent(MessDetail.this, ContactPage.class));
+            mobileNO = getIntent().getStringExtra("MOBILE_NO");
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:"+mobileNO));
+            startActivity(intent);
         });
 
         // Get the mess ID from intent
@@ -293,4 +299,6 @@ public class MessDetail extends AppCompatActivity {
                     // Error occurred while updating the data
                 });
     }
+
+
 }

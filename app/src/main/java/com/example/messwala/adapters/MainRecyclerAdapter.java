@@ -104,6 +104,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
                 intent.putExtra("Longitude",""+mess.getLongitude());
                 intent.putExtra("image",mess.getIMAGE_URL());
                 intent.putExtra("ID",mess.getID());
+                intent.putExtra("MOBILE_NO",mess.getMOBILE_NO());
                 context.startActivity(intent);
             }
         });
