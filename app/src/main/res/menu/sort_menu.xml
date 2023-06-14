@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_sort_ratings"
+        android:title="Sort by Ratings" />
+    <item
+        android:id="@+id/menu_sort_price"
+        android:title="Sort by Price" />
+    <item
+        android:id="@+id/menu_sort_distance"
+        android:title="Sort by Distance" />
+</menu>

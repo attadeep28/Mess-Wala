@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "541191122208",
+    "project_id": "mess-wala-bc1af",
+    "storage_bucket": "mess-wala-bc1af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541191122208:android:f463784dbf586746b2fb45",
+        "android_client_info": {
+          "package_name": "com.example.messwala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541191122208-5m6h5t437v7j7aopfpn22ap2jgfqr2cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVgYBZ4E-xUiiF85vpH2I4WjpYHqoFtK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541191122208-5m6h5t437v7j7aopfpn22ap2jgfqr2cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

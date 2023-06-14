@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MessWala" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">#F44336</item>
+        <item name="colorSecondary">#F44336</item>
+    </style>
+
+    <style name="Theme.MessWala" parent="Base.Theme.MessWala" />
+</resources>

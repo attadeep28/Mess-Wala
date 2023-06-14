@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessDetail"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardElevation="10dp"
+       app:cardCornerRadius="5dp"
+       android:id="@+id/banner_card_view">
+
+       <ImageView
+           android:layout_alignParentTop="true"
+           android:layout_width="match_parent"
+           android:layout_height="230dp"
+           android:id="@+id/mess_banner_image"
+           android:scaleType="centerCrop"
+           />
+       <ProgressBar
+           android:id="@+id/progressBar"
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:visibility="visible" />
+
+   </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner_card_view"
+            android:text="Mess Name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/messName"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pricing: "
+            android:layout_below="@id/messName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/pricing"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_chat_24"
+        android:layout_below="@id/banner_card_view"
+        android:layout_alignBottom="@id/pricing"
+        android:layout_marginRight="60dp"
+
+        android:id="@+id/connect_to_owner"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:elevation="30dp"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/direction"
+        android:src="@drawable/baseline_directions_24"
+        android:layout_below="@id/banner_card_view"
+        android:layout_alignBottom="@id/pricing"
+        android:layout_marginRight="10dp"
+
+        android:layout_alignParentRight="true"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:rating="4.1"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/pricing"
+        android:layout_centerHorizontal="true"
+        android:isIndicator="true"
+        android:id="@+id/rating"
+        android:layout_marginStart="16dp" />
+    <View
+        android:layout_below="@id/rating"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#454545" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        android:layout_below="@id/rating"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/review_tv"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_below="@id/review_tv"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/review_recycler_view"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate and Review"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="#F44336"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rate_review"/>
+</RelativeLayout>

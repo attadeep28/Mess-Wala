@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F44336">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/baseline_location_on_24"
+            />
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Location"
+            android:textStyle="bold"
+            android:textColor="#9E9E9E"
+            android:id="@+id/locationtv"
+            android:layout_toEndOf="@id/location"/>
+        <TextView
+
+            android:id="@+id/user_location"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/location"
+            android:layout_marginLeft="10dp"
+            android:text="Wanadongri ct"
+            android:textSize="18sp"
+            android:layout_below="@id/locationtv"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_sort_24"
+            android:background="#F44336"
+            android:layout_toLeftOf="@id/card"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/sortButton"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#525252"
+            app:cardCornerRadius="35dp"
+            android:id="@+id/card"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@+id/profile_avtar_pic"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_person_24"
+                android:layout_alignParentEnd="true"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>
